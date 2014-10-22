@@ -1,8 +1,21 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.tiles {
+    background: lightgray;
+    width: 320px;
+    padding-top: 5px;
 }
 
-a {
-  color: #00B7FF;
+.tile-row {
+    margin-left: 5px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background: white;
+    display: inline-block;
+    margin-right: 5px;
+    border-color: darkgray;
+    border-width: 2px;
+    border-style: solid;
+
 }
