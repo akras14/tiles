@@ -1,25 +1,5 @@
 ;(function($){
 
-    function getRandomLight() {
-        return Math.floor(Math.random() * 256);
-    }
-
-    function getRandomColor(){
-        var red = getRandomLight();
-        var green = getRandomLight();
-        var blue = getRandomLight();
-        return {
-            r: red,
-            g: green,
-            b: blue
-        }
-    }
-
-    function getColorString(colors){
-        var randomColor =  'rgb(' + colors.r + ', ' + colors.g + ', ' + colors.b + ')';
-        return randomColor;
-    }
-
     var tiles = (function(){
 
         var tiles = {};
@@ -28,6 +8,26 @@
             g: 255,
             b: 255
         };
+
+        function getRandomLight() {
+            return Math.floor(Math.random() * 256);
+        }
+
+        function getRandomColor(){
+            var red = getRandomLight();
+            var green = getRandomLight();
+            var blue = getRandomLight();
+            return {
+                r: red,
+                g: green,
+                b: blue
+            }
+        }
+
+        function getColorString(colors){
+            var randomColor =  'rgb(' + colors.r + ', ' + colors.g + ', ' + colors.b + ')';
+            return randomColor;
+        }
 
         function updateBackgroundFor($tile, index){
             return $tile.css('background', getColorString(tiles[index].color));
