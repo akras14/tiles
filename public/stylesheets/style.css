@@ -17,5 +17,10 @@
     border-color: darkgray;
     border-width: 2px;
     border-style: solid;
+    cursor: pointer; 
+    cursor: hand;
+}
 
+.buttons button {
+    margin: 5px 10px;
 }
